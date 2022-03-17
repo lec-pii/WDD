@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <form name="StuMarks" method="#">
+        <table border="1" cellpadding="0px">
+            <tr>
+                <th>ID</th>
+                <th>F_Name</th>
+                <th>L_Name</th>
+                <th>LINUX</th>
+                <th>WEB</th>
+                <th>ORACLE</th>
+                <th>JAVA</th>
+                <th>Total Marks</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td> <input id="ID" type="number" /> </td>
+                <td> <input type="text" /> </td>
+                <td> <input type="text" /> </td>
+                <td> <input id="linux" type="number" min="0" max="100" /> </td>
+                <td> <input id="web" type="number" min="0" max="100" /> </td>
+                <td> <input id="oracle" type="number" min="0" max="100" /> </td>
+                <td> <input id="java" type="number" min="0" max="100" /> </td>
+                <td> <span id="total"></span> </td>
+                <td> <span id="grade"></span> </td>
+            </tr>
+            
+            <tr>
+                <td colspan="9" align="center"> <input type="button" value="GET GRADES" onclick="calcMarks()"> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script src="script.js" ></script>
+</html>

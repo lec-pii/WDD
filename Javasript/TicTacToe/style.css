@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding:50px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+
+}
+td{
+    padding: 5px;
+}
+input[type=button]{
+    height: 50px;
+    width: 50px;
+    font-size: 2.5rem;
+    padding: 3px;
+    margin: 3px;
+}
+
+#winner{
+    animation: color-change 2s infinite ;
+}
+
+@keyframes color-change {
+    0% {color: red;}
+    25% {color: purple;}
+    50% {color: blue;}
+    75% {color: yellow;}
+    100% {color: red;}
+}

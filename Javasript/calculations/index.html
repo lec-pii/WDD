@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <table>
+        <tr>
+          <td>Num1</td>
+          <td> <input id="num1" type="text" > </td>
+        </tr>
+        <tr>
+          <td>Num2</td>
+          <td> <input id="num2" type="text" > </td>
+        </tr>
+        <tr>
+          <td> <input type="button" value="+" onclick="addition()"> </td>
+          <td> <input type="button" value="-" onclick="subtraction()"> </td>
+        <tr>
+
+          <td> <input type="button" value="*" onclick="multiplication()"> </td>
+          <td> <input type="button" value="/" onclick="division()"> </td>
+        </tr>
+        </tr>
+        <tr>
+          <td>Result</td>
+          <td> <span id="result">  </span></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+ <!-- 
+   there are two ways of inserting your script in HTML, 
+   > first by using the script tag and writting all the javascript code inside it,
+   > then the second way is to have an external javascript file and we link it by 
+   having a script tag with an src with value as the path to the .js file
+-->
+ 
+ <script>
+    const addition = () => {
+      var num1 = parseInt(document.getElementById("num1").value)
+      var num2 = parseInt(document.getElementById("num2").value)
+      document.getElementById("result").innerHTML = (num1 + num2)
+    }
+    const subtraction = () => {
+      var num1 = parseInt(document.getElementById("num1").value)
+      var num2 = parseInt(document.getElementById("num2").value)
+      document.getElementById("result").innerHTML = (num1 - num2)
+    }
+    const multiplication = () => {
+      var num1 = parseInt(document.getElementById("num1").value)
+      var num2 = parseInt(document.getElementById("num2").value)
+      document.getElementById("result").innerHTML = (num1 * num2)
+    }
+    const division = () => {
+      // console.log(typeof(document.getElementById("num1").value));
+      var num1 = parseInt(document.getElementById("num1").value)
+      var num2 = parseInt(document.getElementById("num2").value)
+      document.getElementById("result").innerHTML = (num1 / num2)
+    }
+  </script>
+  <script src="./script.js"/>
+</body>
+
+</html>

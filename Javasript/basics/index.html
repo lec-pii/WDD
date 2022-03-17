@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       
+       const NAME = "Tumelo"
+        const Student = {
+            stu_name: "Thabo",
+            gender: "Female",
+            programme: "CS",
+        }
+        console.log(Student);
+
+        let sesotho = 75
+        var math = 80;
+        english = 90;
+        console.log(sesotho + math + english); //print to the console
+        //document.write(sesotho + math + english); //write to the document
+
+        //FOR LOOP IN ACTION
+        num1 = 50
+        for (let index = 0; index < 5; index++) {
+            let num1 = 30
+            document.writeln(num1) //
+        }
+        document.writeln("<br>" + num1 + "<br>")
+
+        //FOR EACH IN ACTION
+        NAMES = ["thato", "thabo", "rele", "teboho", "bokang", "alice"]
+        NAMES.forEach(name => {
+          document.write("name is: " + name + "<br>")
+          
+        });
+        document.write("<hr>")        
+
+        //WHILE IN ACTION
+        COUNTER = 0
+        
+        while (COUNTER < NAMES.length) {
+          document.write("name is: " + NAMES[COUNTER] + "<br>")
+          document.write(COUNTER+"<br>")
+          COUNTER++
+        }
+
+    </script>
+
+
+    <!-- <div class="calc">
+        1st Number = <input id="num1" type="text" /><br>
+        2nd Number = <input id="num2" type="text" /><br>
+        Sum is = <span id="result"></span> 
+    </div> -->
+
+
+
+</body>
+
+</html>

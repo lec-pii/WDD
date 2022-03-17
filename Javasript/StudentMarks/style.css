@@ -1,0 +1,9 @@
+
+
+input[type="number"]{
+    width:70px;
+}
+input{
+    border: 0px;
+    padding-block: 10px;
+}
