@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validations</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <form id="FormOne">
+        <div id="foromo">
+            <div id="head">
+                <h2>Register</h2>
+            </div>
+            
+            <!-- 
+            from here we have the different form fields bundled inside the div with class form-controls
+            
+            the way I have designed this form is by bundling(class : field) labels, Inputs, error messages, and the 
+            respective icons for accepted or rejected inputs 
+
+            certain elements are by default are not visible, to know how I did this, check the assigned css classes and the css file
+             -->
+            <div class="form-controls">
+                
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" id="fName" />
+                    <img id="fname-pass" class="frm-icon rdisplay" src="./icons/check_circle_black_24dp.svg" alt="" >
+                    <img id="fname-warning-img" class="frm-icon rdisplay" src="./icons/error_outline_black_24dp.svg" alt="" >
+                    <span id="fname-warning" class="warning rdisplay">input required</span>
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" id="lName" />
+                    <img id="lname-pass" class="frm-icon rdisplay" src="./icons/check_circle_black_24dp.svg" alt="" >
+                    <img id="lname-warning-img" class="frm-icon rdisplay" src="./icons/error_outline_black_24dp.svg" alt="" >
+                    <span id="lname-warning" class="warning rdisplay">input required</span>
+                </div>
+                <div class="field">
+                    <label>Email</label>
+                    <input type="email" id="email" />
+                    <img id="email-pass" class="frm-icon rdisplay" src="./icons/check_circle_black_24dp.svg" alt="" >
+                    <img id="email-warning-img" class="frm-icon rdisplay" src="./icons/error_outline_black_24dp.svg" alt="" >
+                    <span id="email-warning" class="warning rdisplay">input required</span>
+                </div>
+                <div class="field">
+                    <label>Password</label>
+                    <input type="password" id="password" />
+                    <img id="pass-pass" class="frm-icon rdisplay" src="./icons/check_circle_black_24dp.svg" alt="" >
+                    <img id="pass-warning-img" class="frm-icon rdisplay" src="./icons/error_outline_black_24dp.svg" alt="" >
+                    <span id="pass-warning" class="warning rdisplay">input required</span>
+                </div>
+                <div class="field">
+                    <label>Confirm Password</label>
+                    <input type="password" id="fpassword" />
+                    <img id="cpass-pass" class="frm-icon rdisplay" src="./icons/check_circle_black_24dp.svg" alt="" >
+                    <img id="cpass-warning-img" class="frm-icon rdisplay" src="./icons/error_outline_black_24dp.svg" alt="" >
+                    <span id="cpass-warning" class="warning rdisplay">input required</span>
+                </div>
+                <div class="field" style="flex-direction: row; justify-content: space-around;">
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+<script src="./validate.js"></script>
+</html>
